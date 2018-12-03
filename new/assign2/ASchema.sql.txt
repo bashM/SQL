@@ -1,0 +1,63 @@
+drop table Assignments;
+drop table Qualifications;
+drop table Offerings;
+drop table preferences;
+drop table Teachers;
+drop table Schools;
+drop table Subjects;
+
+CREATE TABLE Subjects (
+    subjectID CHAR(20) PRIMARY KEY,
+    description VARCHAR(1024)
+);
+
+CREATE TABLE Schools (
+    schoolID CHAR(10) PRIMARY KEY,
+    sname VARCHAR(80) UNIQUE,
+    address VARCHAR(255),
+    contactName VARCHAR(80),
+    phoneNo CHAR(10)
+);
+
+CREATE TABLE Teachers (
+    teacherID CHAR(10) PRIMARY KEY,
+    tname VARCHAR(80) NOT NULL,
+    address VARCHAR(255),
+    email VARCHAR(64),
+    phoneNo CHAR(10)
+);
+
+CREATE TABLE Preferences (
+    teacherID CHAR(10) REFERENCES Teachers,
+    schoolID CHAR(10) REFERENCES Schools,
+    preference INTEGER,
+    PRIMARY KEY (teacherID, schoolID)
+);
+
+CREATE TABLE Offerings (
+    schoolID CHAR(10) REFERENCES Schools,
+    subjectID CHAR(20) REFERENCES Subjects,
+    hourlyWage NUMBER(9,2),
+    PRIMARY KEY (schoolID, subjectID)
+);
+
+CREATE TABLE Qualifications (
+    teacherID CHAR(10) REFERENCES Teachers,
+    subjectID CHAR(20) REFERENCES Subjects,
+    PRIMARY KEY (teacherID, subjectID)
+);
+
+CREATE TABLE Assignments (
+    aid INTEGER PRIMARY KEY,
+    teacherID CHAR(10) REFERENCES Teachers,
+    schoolID CHAR(10) REFERENCES schools,
+    subjectID CHAR(20) REFERENCES Subjects,
+    assignmentDate DATE,
+    hours NUMBER(6,1)
+    -- the following foreign keys could be created
+    -- but they may put too much constraint on the data
+    -- FOREIGN KEY (teacherID, subjectID) REFERENCES Qualifications
+    -- FOREIGN KEY (schoolID, subjectID) REFERENCES Offerings
+);
+
+

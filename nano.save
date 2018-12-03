@@ -1,0 +1,33 @@
+n area number: Show phone call records for a phone line identified by its area code and number.
+Of course, your program needs to check the existence of the phone line. 
+
+Then, your program shows all the phone calls made by the given phone line. 
+
+The display should show the following overall information first:
+
+The billing address of the customer who owns that phone line;
+
+The address of the phone line;
+
+The total minutes of phone calls made by this phone line.
+
+Thlsen for each phone call, show the destination phone number, start time and date, and duration of the call.
+
+
+
+
+
+s month year: Summary report of the given month of the given year.
+	04-2006
+
+The month given could be a numeric number or a full word. The year given is a four-digit number. 
+
+vi 
+First your program need to check the validality of the month and year. 
+
+Then your program should generate a summary report for each customer in that month of the year.
+
+For each customer, the summary report should 
+list the customer's cid, name, billing address and the total number of phone calls made on 
+
+the phone lines owned by this customer.

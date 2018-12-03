@@ -1,0 +1,68 @@
+<head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bs/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../bs/js/bootstrap.min.js"></script>
+
+    <style>
+       header,main,nav,footer{margin:20px;
+            font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif; color:black;}
+			input{
+            color:black;
+        }
+		.box
+		{
+		padding-left:20px;
+	   font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif; color:black;
+       width:100%;
+	   
+       margin-top:2%;
+       background-color: white;
+		border-bottom: #008000;
+		border-radius:10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		box-shadow: 0px 0px 15px #008000;
+		-moz-box-shadow: 0px 0px 15px #008000;
+		-webkit-box-shadow: 0px 0px 15px #008000;
+	
+		text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+
+}
+.rowset  { margin-top: 2px; }
+.rowset1 { margin-top: 5px; }
+.rowset2 { margin-top: 10px; }
+.rowset3 { margin-top: 15px; }
+.rowset4 { margin-top: 30px; }
+.rowset5 { margin-top: 40px; }
+.rowset6 { margin-top: 60px; }
+.rowset7 { margin-top: 80px; }
+.rowset8 { margin-top: 100px; }
+.rowset9 { margin-top: 150px; }
+
+a:link {
+    color: black;
+	
+}
+
+/* visited link */
+a:visited {
+    color: Black;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
+		
+    </style>
+</head>

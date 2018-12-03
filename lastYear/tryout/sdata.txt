@@ -1,0 +1,15 @@
+First Name [2]
+Last  Name [33]
+Age   [4]
+GPA[   0.9]
+------------------
+First Name [ff]
+Last  Name [dd]
+Age   [0]
+GPA[   1.0]
+------------------
+First Name [s]
+Last  Name [3]
+Age   [3]
+GPA[   1.0]
+------------------
